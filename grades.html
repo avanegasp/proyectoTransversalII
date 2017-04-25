@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Play|Stint+Ultra+Expanded" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="img/calculator.png">
+  <link rel="stylesheet" href="css/grades.css">
+  <title>Calificaciones</title>
+</head>
+
+  <body onload="dibuja()">
+    <header>
+      <div class="container">
+          <div class="wrapper s12">
+            <div class="row">
+              <div class="logo col s4">
+                <img src="img/uc.gif" alt="">
+              </div>
+              <div class="nav col s8"></div>
+                <h1>GRADES</h1>
+            </div>
+          </div>
+    </<header>
+
+
+        <div class="section">
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large red waves-effect waves-light">
+                  <i class="material-icons" title="Menú">fast_rewind</i>
+                </a>
+                <ul>
+                  <li class="btn-floating green"><a href="interest.html" title="Interest"><i class="material-icons">trending_up</i></a></li>
+                    <li class="btn-floating blue"><a href="portada.html" title="Home"><i class="material-icons">input</i></a></li>
+                    <li class="btn-floating blue"><a href="index.html" title="Salir"><i class="material-icons">power_settings_new</i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <section class="formlario">
+        <form name= "fo" action="">
+          <br>
+          <br>
+          <br>
+          <table>
+            <h3>Ingresa tu calificación:</h3>
+            <tr>
+              <td colspan="5"><input type="text" name="valores" id="valores"></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td><input type="button" id="calificacion" value="Calificar" onclick="pos()"></td>
+              <td><input type="button" id="calificacion" value="Borrar" onclick="eliminar()"></td>
+            </tr>
+          </table>
+        </form>
+      </section>
+
+      <div class="cohete">
+        <canvas id="milienzo" width="400" height="300">
+          <p>CALCULADORAS DE COLOMBIA</p>
+        </canvas>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+      <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+     <script src="js/grades.js"></script>
+    </body>
+</html>

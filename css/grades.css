@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url(../img/calculator.jpg);
+  position:center;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  background: rgba(68, 31, 68, 0.5);
+  position: fixed;
+}
+
+.logo {
+  float: left;
+}
+
+.wrapper {
+  margin-top: -18px;
+}
+
+.nav {
+  float: left;
+}
+
+.botones {
+  padding-top: 150px;
+  padding-left: 114px;
+}
+
+.botones a {
+  padding: 53px;
+  margin-left:11px;
+}
+
+/*comienzo grades*/
+h1{
+  text-align: center;
+  font-family: 'Stint Ultra Expanded', cursive;
+}
+
+h3{
+  font-size: 30px;
+  margin-left: 130px;
+  font-family: 'Play', sans-serif;
+}
+table{
+  width: 20%;
+  margin: auto;
+}
+
+table #valores {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Play', sans-serif;
+  color: black;
+}
+input{
+  padding: 8px;
+  color: red;
+  font-family: 'Play', sans-serif;
+  font-size: 25px;
+  background: rgba(12, 12, 11, 0.2);
+}
+
+.formulario{
+  float: right;
+}
+
+/*Animacion*/
+.cohete{
+  margin-top: -25px;
+  margin-left: 20px;
+}

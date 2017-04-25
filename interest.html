@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+  <link rel="shortcut icon" href="img/calculator.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Play|Stint+Ultra+Expanded" rel="stylesheet">
+  <link rel="stylesheet" href="css/interest.css">
+
+  <title>Interest</title>
+</head>
+<body onload="dibuja()"> <!-- language=JavaScript onLoad="window_onload()"  OJOOOOO!!-->
+  <header>
+    <div class="container">
+        <div class="wrapper s12">
+          <div class="row">
+            <div class="logo col s4">
+              <img src="img/uc.gif" alt="">
+            </div>
+            <div class="nav col s8"></div>
+            <h1>INTEREST</h1>
+          </div>
+        </div>
+      </<header>
+
+        <!-- toolbar -->
+        <div class="">
+          <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red waves-effect waves-light">
+              <i class="material-icons" title="Menú">fast_rewind</i>
+            </a>
+            <ul>
+              <li class="btn-floating green"><a href="grades.html" title="Grades"><i class="material-icons">spellcheck</i></a></li>
+              <li class="btn-floating blue"><a href="portada.html" title="Home"><i class="material-icons">input</i></a></li>
+              <li class="btn-floating blue"><a href="index.html" title="Salir"><i class="material-icons">power_settings_new</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+<!-- CalculInterest-->
+      <div name="inte" id="contenido">
+        <input id="valorInicial" type="number" value="inicial Pago" placeholder="Introduzca el Valor inicial" onclick="valorInicial()">
+        <input id="tasa" type="number" value="tasa Pago" placeholder="Introduzca la tasa" onclick="tasa()">
+        <input id="anos" type="number" value="años Pago" placeholder="Ingrese el Número de Años" onclick="anos()">
+        <input id="total" type="text" value="TOTAL" placeholder="TOTAL a pagar anualmente">
+      </div>
+
+      <div id="boton">
+        <button onclick="convertidor()">
+          Convertir
+        </button>
+        <button onclick="eliminar()" >
+          Borrar
+        </button>
+      </div>
+
+      <div class="cohete">
+        <canvas id="milienzo" width="400" height="300">
+          <p>CALCULADORAS DE COLOMBIA</p>
+        </canvas>
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+   <script src="js/interest.js"></script>
+  </body>
+</html>
